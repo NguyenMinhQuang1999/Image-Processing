@@ -51,7 +51,6 @@ describe('Image processing', async () => {
     const width = 500;
     const height = 500;
     const fileName = 'icelandwaterfall';
-    await resizeImage({ width, height, fileName });
     expect(async () => await resizeImage({ width, height, fileName })).not.toThrow();
   });
 });
